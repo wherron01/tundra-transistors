@@ -1,0 +1,51 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f45f1ed7-9099-407f-b6ad-6cac15e7865f")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 135.89 69.85)
+		(size 31.75 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5e58b04a-ae38-42c8-ade5-91d029711ef9")
+		(property "Sheetname" "CM4IO"
+			(at 135.89 69.1384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CM4IO.kicad_sch"
+			(at 135.89 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "control"
+				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
