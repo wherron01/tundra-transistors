@@ -319,6 +319,43 @@
 			)
 		)
 	)
+	(sheet
+		(at 16.51 15.24)
+		(size 31.75 38.1)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c1296a5a-7393-49f1-87de-02f37dafd1d0")
+		(property "Sheetname" "power"
+			(at 17.018 17.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 16.764 51.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "control"
+				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

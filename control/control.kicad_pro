@@ -604,6 +604,10 @@
     [
       "843c3f34-c9e2-4dbb-a0ad-834191a46486",
       "SSD"
+    ],
+    [
+      "c1296a5a-7393-49f1-87de-02f37dafd1d0",
+      "power"
     ]
   ],
   "text_variables": {}
