@@ -5833,6 +5833,15 @@
 				)
 			)
 		)
+		(property "PN" "CM4104000"
+			(at 76.2 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "23"
 			(uuid "4cdb75cf-a0e9-4e8f-89ad-831a1b2b2d5d")
 		)
@@ -6575,6 +6584,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "PN" "CM4104000"
+			(at 17.78 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "23"

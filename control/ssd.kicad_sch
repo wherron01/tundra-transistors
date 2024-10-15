@@ -2041,6 +2041,15 @@
 				(hide yes)
 			)
 		)
+		(property "PN" ""
+			(at 173.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4aaa68fc-cc99-46fc-bcba-3dd8da62097d")
 		)
@@ -2092,7 +2101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://web.archive.org/web/20200613074028/http://read.pudn.com/downloads794/doc/project/3133918/PCIe_M.2_Electromechanical_Spec_Rev1.0_Final_11012013_RS_Clean.pdf#page=155"
+		(property "Datasheet" ""
 			(at 148.59 44.45 0)
 			(effects
 				(font
@@ -2102,6 +2111,15 @@
 			)
 		)
 		(property "Description" "M.2 Socket 3 Mechanical Key M"
+			(at 148.59 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
 			(at 148.59 80.01 0)
 			(effects
 				(font
@@ -2499,6 +2517,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 173.99 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" ""
 			(at 173.99 78.74 0)
 			(effects
 				(font
