@@ -574,7 +574,7 @@
           "group_by": true,
           "label": "PN",
           "name": "PN",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
