@@ -629,7 +629,7 @@
     ],
     [
       "5e58b04a-ae38-42c8-ade5-91d029711ef9",
-      "CM4IO"
+      "CM4"
     ],
     [
       "843c3f34-c9e2-4dbb-a0ad-834191a46486",
@@ -638,6 +638,10 @@
     [
       "c1296a5a-7393-49f1-87de-02f37dafd1d0",
       "power"
+    ],
+    [
+      "aeaadb5d-d6ee-48d0-a23f-7fd6d0a8d282",
+      "IO"
     ]
   ],
   "text_variables": {}
