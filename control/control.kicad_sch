@@ -2238,6 +2238,66 @@
 				(justify left top)
 			)
 		)
+		(pin "+3V3" input
+			(at 114.3 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "955b9f00-b91f-48e8-a16b-aecb0634440a")
+		)
+		(pin "GND" input
+			(at 115.57 107.95 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8b976a78-2bd8-44a1-9b82-55627b2d2836")
+		)
+		(pin "SDO" input
+			(at 132.08 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2e6576d4-9abc-47b4-aa20-45e2ccf646a3")
+		)
+		(pin "SCK" input
+			(at 132.08 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3af90143-7d5d-4b3f-a8db-dffa6e6fadbd")
+		)
+		(pin "SDI" input
+			(at 132.08 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fc4c876a-89d2-4c15-827a-c647b48e05e8")
+		)
+		(pin "CSB" input
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e8abb8a3-c857-4fe1-bc0e-56d63e5e670e")
+		)
 		(instances
 			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f"
