@@ -489,7 +489,7 @@
 		)
 		(uuid "5230cabd-1e84-41be-a249-35714396705a")
 	)
-	(hierarchical_label "SDI"
+	(hierarchical_label "BME_SDI"
 		(shape input)
 		(at 90.17 96.52 0)
 		(fields_autoplaced yes)
@@ -513,7 +513,7 @@
 		)
 		(uuid "38a62ce1-2fab-4e79-905d-09e1a3565b20")
 	)
-	(hierarchical_label "SCK"
+	(hierarchical_label "BME_SCK"
 		(shape input)
 		(at 90.17 91.44 0)
 		(fields_autoplaced yes)
@@ -525,8 +525,8 @@
 		)
 		(uuid "77374ecb-b7df-4da8-a289-12dd331dc217")
 	)
-	(hierarchical_label "SDO"
-		(shape input)
+	(hierarchical_label "BME_SDO"
+		(shape output)
 		(at 90.17 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -549,7 +549,7 @@
 		)
 		(uuid "c1b5af53-a575-41c3-ad0d-ee19f875e589")
 	)
-	(hierarchical_label "CSB"
+	(hierarchical_label "BME_CSB"
 		(shape input)
 		(at 90.17 101.6 0)
 		(fields_autoplaced yes)
@@ -740,6 +740,15 @@
 			)
 		)
 		(property "Description" "3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "BME280"
 			(at 74.93 93.98 0)
 			(effects
 				(font
