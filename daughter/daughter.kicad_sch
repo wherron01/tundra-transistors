@@ -1899,7 +1899,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "bd59c00d-0cce-4224-a8d0-19e92f10a542")
-		(property "Sheetname" "USB"
+		(property "Sheetname" "IO"
 			(at 118.872 85.344 0)
 			(effects
 				(font
@@ -1908,7 +1908,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "usb.kicad_sch"
+		(property "Sheetfile" "io.kicad_sch"
 			(at 111.252 86.614 0)
 			(effects
 				(font
