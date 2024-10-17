@@ -559,6 +559,152 @@
 				)
 			)
 		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode_Bridge:ABS10"
 			(pin_names
 				(offset 0)
@@ -2672,12 +2818,6 @@
 		(uuid "3f5f877f-460b-47bf-a3d7-7e9a731166ff")
 	)
 	(junction
-		(at 195.58 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4888fc04-a590-4def-a885-023ba188ea36")
-	)
-	(junction
 		(at 121.92 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2688,6 +2828,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c61da2e-e9b6-4228-8b14-84c9630b1baa")
+	)
+	(junction
+		(at 195.58 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ae5036c-c7db-43c6-a98f-0cb40077cae7")
 	)
 	(junction
 		(at 195.58 91.44)
@@ -2923,16 +3069,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 99.06) (xy 198.12 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42baff2e-1c61-46f2-add6-68b0b2b84af3")
-	)
-	(wire
-		(pts
 			(xy 121.92 107.95) (xy 132.08 107.95)
 		)
 		(stroke
@@ -2990,16 +3126,6 @@
 			(type default)
 		)
 		(uuid "5d7728ff-7f9f-4d7f-8597-691117c11e39")
-	)
-	(wire
-		(pts
-			(xy 195.58 99.06) (xy 195.58 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ac8beb1-7e5b-4179-8663-9d4f65aaabff")
 	)
 	(wire
 		(pts
@@ -3183,6 +3309,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 99.06) (xy 195.58 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd405697-b3b9-4125-ab39-cd663ab6655a")
+	)
+	(wire
+		(pts
 			(xy 87.63 93.98) (xy 87.63 99.06)
 		)
 		(stroke
@@ -3323,7 +3459,7 @@
 	)
 	(hierarchical_label "+5V"
 		(shape output)
-		(at 198.12 99.06 0)
+		(at 203.2 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3342,7 +3478,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "055ad3a0-6bf3-403b-9b54-38e535edc6ef")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR0102"
 			(at 140.97 100.33 0)
 			(effects
 				(font
@@ -3390,7 +3526,13 @@
 			(uuid "0a74aace-29c2-4e2e-b7f7-8da96c4e644e")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR010")
 					(unit 1)
@@ -3468,7 +3610,13 @@
 			(uuid "5e50364a-2cbc-4030-b03a-bb06f908f336")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "C4")
 					(unit 1)
@@ -3546,7 +3694,13 @@
 			(uuid "5915dbc4-86b3-407a-ad32-6caa8f3179c3")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "C5")
 					(unit 1)
@@ -3563,7 +3717,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a7e87b9-1f9d-4088-8a55-47e2c523392e")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR0101"
 			(at 173.99 115.57 0)
 			(effects
 				(font
@@ -3611,7 +3765,13 @@
 			(uuid "67c177e1-616f-4565-8e55-de6d68b199fd")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR011")
 					(unit 1)
@@ -3677,6 +3837,12 @@
 			(uuid "868b23a4-b2e1-40b4-8d97-de2efe738770")
 		)
 		(instances
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
 			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "TP6")
@@ -3744,6 +3910,12 @@
 		)
 		(instances
 			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "TP4")
 					(unit 1)
@@ -3761,7 +3933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41713dcd-24cd-4023-95c6-d8d34b6db674")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR0109"
 			(at 195.58 95.25 0)
 			(effects
 				(font
@@ -3770,7 +3942,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+5VI2"
 			(at 195.58 86.36 0)
 			(effects
 				(font
@@ -3809,7 +3981,13 @@
 			(uuid "e9d9624b-428f-4603-800f-15b2301d7576")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR015")
 					(unit 1)
@@ -3826,7 +4004,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4c0644e0-58ed-4458-8738-c969bb67c89f")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0106"
 			(at 87.63 107.95 0)
 			(effects
 				(font
@@ -3874,6 +4052,12 @@
 			(uuid "f184d35c-8883-4c8e-aa3a-35aa54ba934c")
 		)
 		(instances
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
 			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR07")
@@ -3950,9 +4134,80 @@
 			(uuid "7f6d18ac-95c5-487c-b112-91e836e9cb03")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 203.2 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cee3eff-92b0-4944-9930-83b4e89afd00")
+		(property "Reference" "#PWR018"
+			(at 203.2 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 205.486 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 203.2 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a36b1f3-71a8-4f69-ae2c-d1e9b439420c")
+		)
+		(instances
+			(project ""
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -4029,6 +4284,12 @@
 		)
 		(instances
 			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "C2")
 					(unit 1)
@@ -4095,6 +4356,12 @@
 		)
 		(instances
 			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "TP5")
 					(unit 1)
@@ -4111,7 +4378,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fea6084-38a5-407e-ab87-338e97007ed2")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR0108"
 			(at 99.06 111.76 0)
 			(effects
 				(font
@@ -4159,7 +4426,13 @@
 			(uuid "4b177445-3c5d-4d68-b8a9-341583fcd563")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR05")
 					(unit 1)
@@ -4248,7 +4521,13 @@
 			(uuid "22cd3695-9bf5-4282-a9a5-fc43eb30a8e5")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "U1")
 					(unit 1)
@@ -4265,7 +4544,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89586466-9202-414e-898c-42005029218a")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR0103"
 			(at 121.92 88.9 0)
 			(effects
 				(font
@@ -4313,7 +4592,13 @@
 			(uuid "bb67a298-ed8e-431f-9031-11359d15434d")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR08")
 					(unit 1)
@@ -4331,7 +4616,7 @@
 		(dnp no)
 		(uuid "89fdbb8d-fc18-44ff-9acc-bebb7f041c36")
 		(property "Reference" "TP2"
-			(at 197.104 97.282 90)
+			(at 199.898 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4339,7 +4624,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5VDC"
+		(property "Value" "5VDCI"
 			(at 196.088 93.218 90)
 			(effects
 				(font
@@ -4380,6 +4665,12 @@
 		)
 		(instances
 			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "TP2")
 					(unit 1)
@@ -4396,7 +4687,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8bf8fa90-a970-42c6-bc8a-68a92f5a453a")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR0104"
 			(at 121.92 111.76 0)
 			(effects
 				(font
@@ -4444,7 +4735,13 @@
 			(uuid "e6a2bcd0-a65f-4df8-ad6b-fa64797e9e66")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR09")
 					(unit 1)
@@ -4522,7 +4819,13 @@
 			(uuid "fde18470-7bf6-4243-944c-3f1b8f2bd149")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "C6")
 					(unit 1)
@@ -4539,7 +4842,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ee43bb5-36b6-4f0a-8d27-9c09b5a10e27")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR0105"
 			(at 99.06 88.9 0)
 			(effects
 				(font
@@ -4587,7 +4890,13 @@
 			(uuid "0c24074f-10b1-4b46-b309-99003a6dd290")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR04")
 					(unit 1)
@@ -4676,7 +4985,13 @@
 			(uuid "fc6135ff-361c-4392-babb-bc9df4f6f603")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "SW1")
 					(unit 1)
@@ -4771,7 +5086,13 @@
 			(uuid "ed80190f-b777-4543-a37f-f56662d0484a")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "T1")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "T1")
 					(unit 1)
@@ -4837,6 +5158,12 @@
 			(uuid "c90e8357-7a52-4573-9afd-37da923049df")
 		)
 		(instances
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
 			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "TP7")
@@ -4916,6 +5243,12 @@
 		)
 		(instances
 			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "C3")
 					(unit 1)
@@ -4981,7 +5314,13 @@
 			(uuid "f73dc08c-04ce-4122-8961-dbeac6e9cd40")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "TP1")
 					(unit 1)
@@ -5070,10 +5409,84 @@
 			(uuid "fc6135ff-361c-4392-babb-bc9df4f6f604")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "SW1")
+					(unit 2)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "SW1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 199.39 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce8c1152-6237-4a59-b7de-3eaf6649886e")
+		(property "Reference" "F1"
+			(at 198.374 97.282 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Polyfuse"
+			(at 200.152 101.854 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 199.39 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d70e100-0872-4216-ba2c-dcd78e27876f")
+		)
+		(pin "1"
+			(uuid "547db8fa-7559-40ed-b8ed-832c0fe5e943")
+		)
+		(instances
+			(project ""
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "F1")
+					(unit 1)
 				)
 			)
 		)
@@ -5136,6 +5549,12 @@
 			(uuid "93d265ec-11ed-4f42-8955-5d8d89a3bf2a")
 		)
 		(instances
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
 			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "TP3")
@@ -5214,7 +5633,13 @@
 			(uuid "0ec55b6c-8e48-45de-9e5d-469bd1660a3b")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "C7")
 					(unit 1)
@@ -5292,7 +5717,13 @@
 			(uuid "6d12abbc-f935-4878-a265-22a64ac4b073")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "C1")
 					(unit 1)
@@ -5375,7 +5806,13 @@
 			(uuid "1a100c41-f8d7-4f10-b389-821dcc33a125")
 		)
 		(instances
-			(project ""
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "D2")
 					(unit 1)
@@ -5392,7 +5829,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fcdfa032-937d-4287-a377-b036d12043d3")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0107"
 			(at 87.63 92.71 0)
 			(effects
 				(font
@@ -5440,6 +5877,12 @@
 			(uuid "bf51b1ff-5ec4-41ee-94fa-35e972a778e6")
 		)
 		(instances
+			(project "control"
+				(path "/9e050361-84ba-4b41-8bc1-d0f304e5538b/12fe0965-cd33-49df-9761-1ec1a1c3909a"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
 			(project "control"
 				(path "/f45f1ed7-9099-407f-b6ad-6cac15e7865f/c1296a5a-7393-49f1-87de-02f37dafd1d0"
 					(reference "#PWR06")
