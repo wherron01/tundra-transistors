@@ -1806,6 +1806,12 @@
 		(color 0 0 0 0)
 		(uuid "8aa67d4c-da0b-48d8-bda9-19eed4148ca6")
 	)
+	(junction
+		(at 163.83 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c361d2b3-7044-4b50-8bb0-c8d0337f3a3b")
+	)
 	(no_connect
 		(at 113.03 74.93)
 		(uuid "2c785734-876b-41f9-b88e-ce0a43fb2943")
@@ -1872,6 +1878,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 97.79) (xy 163.83 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a7d4ab-dba8-4d33-9e30-a4c93d3832ca")
+	)
+	(wire
+		(pts
 			(xy 163.83 46.99) (xy 138.43 46.99)
 		)
 		(stroke
@@ -1889,6 +1905,28 @@
 			(type default)
 		)
 		(uuid "cb48f84f-4c8a-4ac2-bc17-38b979c1720e")
+	)
+	(label "LED_C"
+		(at 163.83 105.41 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c4a232c7-5fbf-4555-87cc-9b58ddaedf7a")
+	)
+	(label "LED_A"
+		(at 165.1 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce1fb367-1735-42dc-bcc5-6754401e245b")
 	)
 	(hierarchical_label "+3V3"
 		(shape input)
@@ -2502,10 +2540,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fb8b5a12-ebed-4753-bd18-e690c9341b9b")
 		(property "Reference" "R1"
-			(at 166.37 92.7099 0)
+			(at 164.084 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2514,7 +2551,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 166.37 95.2499 0)
+			(at 163.83 94.996 90)
 			(effects
 				(font
 					(size 1.27 1.27)
